@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Button from "../../components/Button";
 
 const ContactPage = () => {
   const [name, setName] = useState("");
@@ -87,12 +88,7 @@ const ContactPage = () => {
       />
       <br />
       <br />
-      <button
-        className="bg-yellow-500 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-full duration-500"
-        type="submit"
-      >
-        Send
-      </button>
+      <Button type="submit" title="Send" />
       <h2 className="text-center text-red-600 text-3xl">{result}</h2>
     </form>
   );

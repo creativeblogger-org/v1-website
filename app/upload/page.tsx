@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import axios from "axios";
+import Button from "../../components/Button";
 
 const UploadForm = () => {
   const [file, setFile] = useState(null);
@@ -65,7 +66,7 @@ const UploadForm = () => {
               Voir le{" "}
               <a
                 className="underline decoration-solid text-yellow-500"
-                href="/"
+                href="/redacteurs"
               >
                 guide d'utilisation
               </a>
@@ -76,16 +77,12 @@ const UploadForm = () => {
             name="file"
             id="dropzone-file"
             className="hidden"
+            accept=".md"
             onChange={handleFileChange}
           />
         </label>
         <br />
-        <button
-          className="bg-yellow-500 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-full duration-500"
-          type="submit"
-        >
-          Upload
-        </button>
+        <Button type="submit" title="Upload" />
         {message && <p className="text-center text-yellow-500">{message}</p>}
       </form>
     </div>

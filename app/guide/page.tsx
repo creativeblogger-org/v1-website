@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import GuideCard from "../../components/GuidCard";
 
 const GuidePage = () => {
   return (
@@ -10,33 +11,9 @@ const GuidePage = () => {
       <br />
       <br />
       <div className="grid grid-cols-1 text-center md:grid-cols-3 gap-4 sd:grid-cols-2">
-        <center>
-          <Link href="/users">
-            <div className="border-2 w-1/3 p-8 bg-slate-800 rounded-md">
-              <h2 className="text-center text-yellow-500">
-                Guide des utilisateurs
-              </h2>
-            </div>
-          </Link>
-        </center>
-        <center>
-          <Link href="/redacteurs">
-            <div className="border-2 w-1/3 p-8 bg-slate-800 rounded-md">
-              <h2 className="text-center text-yellow-500">
-                Guide des rédacteurs
-              </h2>
-            </div>
-          </Link>
-        </center>
-        <center>
-          <Link href="/mods">
-            <div className="border-2 w-1/3 p-8 bg-slate-800 rounded-md">
-              <h2 className="text-center text-yellow-500">
-                Guide des modérateurs
-              </h2>
-            </div>
-          </Link>
-        </center>
+        <GuideCard title="Guide des utilisateurs" route="/users" />
+        <GuideCard title="Guide des rédacteurs" route="/redacteurs" />
+        <GuideCard title="Guide des modérateurs" route="/mods" />
       </div>
     </div>
   );

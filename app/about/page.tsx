@@ -1,4 +1,5 @@
 import React from "react";
+import AboutCard from "../../components/AboutCard";
 
 const AboutPage = () => {
   return (
@@ -23,16 +24,12 @@ const AboutPage = () => {
       <br />
       <h1 className="text-center text-2xl">Notre équipe</h1>
       <br />
-      <center>
-        <div className="border-slate-400 bg-slate-800 border-2 w-1/3 p-8 rounded-md">
-          <img src="/mael.png" alt="Photo de profil de Maël C." />
-          <h2 className="text-yellow-500 text-2xl">Maël C.</h2>
-          <p className="text-white text-xl">
-            Administrateur et fondateur du projet. <br />
-            Développeur front-end depuis 2 ans et back-end depuis 1 an et demi
-          </p>
-        </div>
-      </center>
+      <AboutCard
+        img="/mael.png"
+        alt="Photo de profil de Maël C."
+        name="Maël C."
+        bio="Administrateur et fondateur du projet. Développeur front-end depuis 2 ans et back-end depuis 1 an et demi"
+      />
     </div>
   );
 };
