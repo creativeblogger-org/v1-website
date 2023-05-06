@@ -5,7 +5,7 @@ import axios from "axios";
 import Button from "../../components/Button";
 
 const UploadForm = () => {
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
@@ -22,7 +22,7 @@ const UploadForm = () => {
         },
       });
       setMessage(res.data.message);
-      setFile(null);
+      setFile("");
       setName("");
     } catch (err) {
       console.error(err);

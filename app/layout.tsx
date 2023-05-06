@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import "../styles/globals.css";
 import { name, description } from "../config/config";
-import axios from "axios";
 
 export default function RootLayout({
   children,

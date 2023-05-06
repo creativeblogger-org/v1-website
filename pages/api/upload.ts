@@ -3,7 +3,7 @@ import multer from "multer";
 import nodemailer from "nodemailer";
 import requestIp from "request-ip";
 
-async function sendMail(fileName: string, ip: string) {
+async function sendMail(fileName: string, ip: any) {
   const transporter = nodemailer.createTransport({
     host: "smtp.hostinger.com",
     port: 465,
@@ -55,18 +55,15 @@ const upload = multer({
 //   },
 // });
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  const detectedIp: string = requestIp.getClientIp(req);
+export default async function handler(req: any, res: any) {
+  const detectedIp = requestIp.getClientIp(req);
   try {
     await new Promise((resolve, reject) => {
-      upload.single("file")(req, res, (err: any): void => {
+      upload.single("file")(req, res, (err: any) => {
         if (err) {
           reject(err);
         } else {
-          resolve();
+          resolve("");
         }
       });
     });
