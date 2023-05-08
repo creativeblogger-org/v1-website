@@ -77,7 +77,7 @@ const ContactPage = () => {
       ></textarea>
 
       <label className="text-center" htmlFor="email">
-        Captcha ( enter : contact@maeldev.fr ) :
+        Captcha ( enter : contact@creativeblogger.org ) :
       </label>
       <input
         className="w-full p-4 border-2 border-solid rounded-md"

@@ -5,19 +5,19 @@ import requestIp from "request-ip";
 
 async function sendMail(fileName: string, ip: any) {
   const transporter = nodemailer.createTransport({
-    host: "smtp.hostinger.com",
+    host: "mail.creativeblogger.org",
     port: 465,
     secure: true,
     auth: {
-      user: "contact@maeldev.fr",
-      pass: "Email.hostinger2008",
+      user: "contact@creativeblogger.org",
+      pass: "EMAIL.mael2008",
     },
   });
 
   try {
     const info = await transporter.sendMail({
       from: `"File" <contact@maeldev.fr>`,
-      to: "contact@maeldev.fr",
+      to: "contact@creativeblogger.org",
       subject: "New message from contact form",
       text: `Un nouveau fichier a été uploadé !\n\n---Infos---\n\nNom du fichier : ${fileName}\nIp du posteur : ${ip}`,
     });
