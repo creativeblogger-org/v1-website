@@ -25,7 +25,5 @@ jobs:
           server: ${{ secrets.SERVER }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          local-dir: |
-            .next/
-            posts/
+          local-dir: .next/
           server-dir: .next/
