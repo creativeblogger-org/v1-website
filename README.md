@@ -9,7 +9,9 @@
 ### ⌛ Prérequis :
 
 > NodeJS ( des connaissances sont requises en NextJs, ou utilisez chatGPT ^^ )
+
 > Un ordinateur
+
 > Aller sur le site ( c'est important pour le référencement )
 
 ### 📋 Pour utiliser ce template
@@ -34,6 +36,9 @@ Pour plus d'infos : [lien de la license](https://creativecommons.org/licenses/by
 A Creative Blogger on aime :
 
 > Maël C. : Fondateur & Dev & Rédacteur ( ouais je fais tout moi ! )
+
 > Riccardo : Admin
+
 > RedBoy : Admin
+
 > Iandres : Admin
