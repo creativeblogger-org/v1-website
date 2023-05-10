@@ -6,3 +6,4 @@ author: "Maël C."
 ---
 
 Article en cours de rédaction...
+N'hésitez pas en attendant à rejoindre notre serveur discord !
