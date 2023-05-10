@@ -2,6 +2,9 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import multer from "multer";
 import nodemailer from "nodemailer";
 import requestIp from "request-ip";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 async function sendMail(fileName: string, ip: any) {
   const transporter = nodemailer.createTransport({
@@ -10,7 +13,7 @@ async function sendMail(fileName: string, ip: any) {
     secure: true,
     auth: {
       user: "contact@creativeblogger.org",
-      pass: "EMAIL.mael2008",
+      pass: process.env.EMAIL_PASSWORD,
     },
   });
 

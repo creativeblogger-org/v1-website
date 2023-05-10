@@ -1,4 +1,7 @@
 import nodemailer from "nodemailer";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 export default async function handler(req: any, res: any) {
   const { name, email, emailUser, message } = req.body;
@@ -9,7 +12,7 @@ export default async function handler(req: any, res: any) {
     secure: true,
     auth: {
       user: "contact@creativeblogger.org",
-      pass: "EMAIL.mael2008",
+      pass: process.env.EMAIL_PASSWORD,
     },
   });
 
