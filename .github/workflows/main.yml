@@ -26,4 +26,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           local-dir: .next/
-          server-dir: /public_html/creativeblogger/.next/
+          server-dir: /home/muku2534/public_html/creativeblogger/
