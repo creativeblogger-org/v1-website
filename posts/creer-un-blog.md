@@ -19,7 +19,7 @@ _Ps : Si vous avez déjà NodeJS d'installé et un IDE vous pouvez vous rendre �
 
 Donc nous avons mis en ligne notre code pour vous. Cependant vous vous doutez bien que pour l'utiliser il faut des prérequis que nous allons voir ici. Notre template ( modèle de code ) est fait avec JavaScript ( ça vous rappele peut être vos années de lycée ) avec le framework ( outil de travail ) ReactJS & NextJS. ReactJS permet de créer de sublimes interfaces utilisateurs et NextJS est la colonne vértébrale du site qui permet de faire fonctionner le système lui-même de blog, mais nous verrons cela plus tard. Pour commencer il va falloir installer NodeJS qui est l'outil qui vous permettra de faire tourner votre site sur votre ordinateur. Pour cela rendez vous sur le site [de nodejs](https://nodejs.org/fr) et installer la version LTS.
 
-![node-js-image](/nodejs.png)
+![node-js-image](https://creativeblogger.org/_next/image?url=%2Fnodejs.png&w=640&q=75)
 
 Puis, si vous êtes sur windows ou macOs, vous pouvez ouvrir le fichier téléchargé et suivre les étapes d'installations. Si vous êtes sous linux, entrez ces commandes dans votre terminal :
 
@@ -50,7 +50,7 @@ Maintenant nous sommes opérationnels pour la prochaine étape.
 
 Nous passons à la partie la plus importante ! Le téléchargement du code de Creative Blogger. Pour cela, c'est très simple, rendez vous [ici](https://github.com/MaelDevFr/creative-blogger) et cliquez sur le bouton vert "Code" puis "Download ZIP". Dézippez le fichier téléchargé et ouvrez le dossier avec VsCode et vous devrez avoir une interface de ce style ( à peu près )
 
-![vsc-img](/vsc-cb.png)
+![vsc-img](https://creativeblogger.org/_next/image?url=%2Fvsc-cb.png&w=640&q=75)
 
 Pour installer toutes les dépendances utiles ouvrez le terminal avec `Ctrl + J` ou `Cmd + J` chez Apple et rentrez la commande `npm install`. Ceci fait vous allez pouvoir créer un fichier en le nommer `.env` ce fichier est relativement important car il contiendra le mot de passe de votre adresse mail pour le formulaire de contact. Rentrez dans ce fichier la ligne :
 
