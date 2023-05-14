@@ -4,12 +4,12 @@ import AboutCard from "../../components/AboutCard";
 const AboutPage = () => {
   return (
     <div>
-      <h1 className="text-center text-2xl">Qui Sommes Nous ?</h1>
+      <h1 className="text-center text-3xl font-coco">Qui Sommes Nous ?</h1>
       <br />
       <div className="flex justify-center mx-auto prose">
         <h3>
-          Au début, j'étais seul... puis une idée naquit dans mon esprit <br />{" "}
-          " Pourquoi ne pas créer un blog où tout le monde pourrait poster ses
+          Au début, j'étais seul... puis une idée naquit dans mon esprit "
+          Pourquoi ne pas créer un blog où tout le monde pourrait poster ses
           posts, se faire connaître et percer dans le milieu ?" Et oui l'idée
           est partie de là ! Il y a eu ensuite beaucoup de travail surtout au
           niveau du code ( et beaucoup d'agacement ) mais voilà où le projet en

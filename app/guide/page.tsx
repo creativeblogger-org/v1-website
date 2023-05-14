@@ -5,7 +5,7 @@ import GuideCard from "../../components/GuidCard";
 const GuidePage = () => {
   return (
     <div>
-      <h1 className="text-center text-2xl">
+      <h1 className="text-center text-3xl font-coco">
         Guide du fonctionnement de la plateforme
       </h1>
       <br />

@@ -3,7 +3,7 @@ import React from "react";
 const UsersPage = () => {
   return (
     <div>
-      <h1 className="text-center text-2xl">Guide Des Utilisateurs</h1>
+      <h1 className="text-center text-3xl font-coco">Guide Des Utilisateurs</h1>
       <br />
       <p>
         Les utilisateurs de la plateforme Creative Blogger sont tenus par

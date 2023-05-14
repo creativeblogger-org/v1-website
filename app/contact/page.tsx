@@ -41,56 +41,59 @@ const ContactPage = () => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="border-2 border-solid p-11 border-slate-800 rounded-md"
-    >
-      <label className="text-center" htmlFor="name">
-        Name :
-      </label>
-      <input
-        className="w-full p-4 border-2 border-solid rounded-md"
-        type="text"
-        id="name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <label className="text-center" htmlFor="emailUser">
-        Email :
-      </label>
-      <input
-        className="w-full p-4 border-2 border-solid rounded-md"
-        type="email"
-        name="emailUser"
-        id="emailUser"
-        value={emailUser}
-        onChange={(e) => setEmailUser(e.target.value)}
-      />
-      <label className="text-center" htmlFor="message">
-        Message :
-      </label>
-      <textarea
-        className="w-full p-4 border-2 border-solid rounded-md"
-        id="message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      ></textarea>
+    <div>
+      <h1 className="text-3xl font-coco text-center">Contactez-nous !</h1>
+      <form
+        onSubmit={handleSubmit}
+        className="border-2 border-solid p-11 border-slate-800 rounded-md"
+      >
+        <label className="text-center" htmlFor="name">
+          Name :
+        </label>
+        <input
+          className="w-full p-4 border-2 border-solid rounded-md"
+          type="text"
+          id="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <label className="text-center" htmlFor="emailUser">
+          Email :
+        </label>
+        <input
+          className="w-full p-4 border-2 border-solid rounded-md"
+          type="email"
+          name="emailUser"
+          id="emailUser"
+          value={emailUser}
+          onChange={(e) => setEmailUser(e.target.value)}
+        />
+        <label className="text-center" htmlFor="message">
+          Message :
+        </label>
+        <textarea
+          className="w-full p-4 border-2 border-solid rounded-md"
+          id="message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        ></textarea>
 
-      <label className="text-center" htmlFor="email">
-        Captcha ( enter : contact@creativeblogger.org ) :
-      </label>
-      <input
-        className="w-full p-4 border-2 border-solid rounded-md"
-        type="email"
-        id="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <br />
-      <br />
-      <Button type="submit" title="Send" />
-      <h2 className="text-center text-red-600 text-3xl">{result}</h2>
-    </form>
+        <label className="text-center" htmlFor="email">
+          Captcha ( enter : contact@creativeblogger.org ) :
+        </label>
+        <input
+          className="w-full p-4 border-2 border-solid rounded-md"
+          type="email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <br />
+        <br />
+        <Button type="submit" title="Send" />
+        <h2 className="text-center text-red-600 text-3xl">{result}</h2>
+      </form>
+    </div>
   );
 };
 

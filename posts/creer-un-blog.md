@@ -46,7 +46,7 @@ Maintenant nous sommes opérationnels pour la prochaine étape.
 
 ## 3 : Télécharger le code
 
-Nous passons à la partie la plus importante ! Le téléchargement du code de Creative Blogger. Pour cela, c'est très simple, rendez vous [ici](https://github.com/MaelDevFr/creative-blogger) et cliquez sur le bouton vert "Code" puis "Download ZIP". Dézippez le fichier téléchargé et ouvrez le dossier avec VsCode et vous devrez avoir une interface de ce style ( à peu près )
+Nous passons à la partie la plus importante ! Le téléchargement du code de Creative Blogger. Pour cela, c'est très simple, rendez vous [ici](https://github.com/MaelDevFr/creative-blogger) et cliquez sur le bouton vert "Code" puis "Download ZIP". Dézippez le fichier téléchargé et ouvrez le dossier avec VsCode.
 
 Pour installer toutes les dépendances utiles ouvrez le terminal avec `Ctrl + J` ou `Cmd + J` chez Apple et rentrez la commande `npm install`. Ceci fait vous allez pouvoir créer un fichier en le nommer `.env` ce fichier est relativement important car il contiendra le mot de passe de votre adresse mail pour le formulaire de contact. Rentrez dans ce fichier la ligne :
 
@@ -69,6 +69,21 @@ const transporter = nodemailer.createTransport({
 ```
 
 Si le port diffère, changer-le aussi par celui que vous indique votre service mail.
+
+Créez ensuite dans le dossier `config` un fichier nommé **config.json**. Ce fichier est très important car il contiendra le mot de passe des différents rédacteurs qui pourront avoir l'accès à la page /upload du site. Vous devrez rentrer un nom d'utilisateur et un mot de passe comme ci-dessous :
+
+```
+{
+  "users": [
+    {
+      "username": "username",
+      "password": "mot_de_passe"
+    }
+  ]
+}
+```
+
+Ps : dans le cadre d'un projet entre plusieurs rédacteurs assurez vous d'être le seul qui peut modifier ce fichier.
 
 Vous y êtes presque ! Rentrez maintenant la commande suivante dans votre terminal :
 
@@ -129,3 +144,7 @@ Et voilà ! Vous avez votre propre blog maintenant merci qui ?
 N'oubliez pas que Creative Blogger cherche des rédacteurs motivés pour contribuer au projet, si c'est votre cas rendez-vous sur le [serveur discord](https://discord.gg/uT8zVVn6rQ) ou par mail à l'adresse : contact@creativeblogger.org
 
 A la prochaine !
+
+```
+
+```

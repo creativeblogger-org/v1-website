@@ -3,7 +3,7 @@ import React from "react";
 const RedacteursPage = () => {
   return (
     <div>
-      <h1 className="text-center text-2xl">Guide Des Rédacteurs</h1>
+      <h1 className="text-center text-3xl font-coco">Guide Des Rédacteurs</h1>
       <br />
       <p>
         Les rédacteurs de Creative Blogger sont la partie essentielle du bon

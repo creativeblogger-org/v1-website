@@ -3,7 +3,7 @@ import React from "react";
 const ModssPage = () => {
   return (
     <div>
-      <h1 className="text-center text-2xl">Guide Des Modérateurs</h1>
+      <h1 className="text-center text-3xl font-coco">Guide Des Modérateurs</h1>
       <br />
       <p>
         Les modérateurs ont le rôle d'assister les administrateurs de Creative
