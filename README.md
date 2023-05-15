@@ -22,7 +22,7 @@ Ce template est libre d'utilisation ( comme on le dit dans l'article ). Vous dev
 ### 🗺️ Notre roadmap
 
 - [x] 08 / 05 / 2023 : Mise en ligne du site ( après plusieurs problèmes )
-- [ ] ? / ? / ? : Mise en ligne du premier article
+- [x] 13 / 05 / 2023 : Mise en ligne du premier article
 - [ ] ? / ? / ? : Création des comptes pour le projet sur les réseaux sociaux
 
 ### 📜 La license
